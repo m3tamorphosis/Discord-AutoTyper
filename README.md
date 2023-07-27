@@ -1,4 +1,4 @@
-very simple script that gets a funny reaction
+very simple script that gets a funny reaction :trollface:
 
 # Requirements
 1. Python  
