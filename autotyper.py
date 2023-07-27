@@ -5,6 +5,7 @@ token = ""
 ids = [
     1
 ]
+
 headers = {"authorization" : token}
 print("Beginning autotyper")
 while True:
