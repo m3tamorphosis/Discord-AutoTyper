@@ -15,19 +15,10 @@ ids = [
 def startup():
     os.system("cls")
     print("Beginning autotyper")
-
-def update(start_time):
-    program_time = time.time() - start_time
-    hours = int(program_time // 3600)
-    minutes = int((program_time % 3600) // 60)
-    seconds = int(program_time % 60)
-    os.system(f"title Discord Autotyper - Duration: {hours}:{minutes}:{seconds}")
-
+    
 def main():
     startup()
-    start_time = time.time()
     while True:
-        update(start_time)
         for id in ids:
             for token in tokens:
                 headers = {"authorization" : token}
@@ -38,5 +29,6 @@ def main():
                 else:
                     print(f"Failed to type in {id} under {token[:5]}")
         time.sleep(1)
+
 
 main()
