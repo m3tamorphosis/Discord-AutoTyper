@@ -17,9 +17,9 @@ def Send_Data(id, token):
     endpoint = f"https://discord.com/api/v9/channels/{id}/typing"
     res = requests.post(endpoint, headers=headers)
     if res.status_code == 204:
-    print(f"Sent typing request to {id} under {token[:5]}")
+        print(f"Sent typing request to {id} under {token[:5]}")
     else:
-    print(f"Failed to type in {id} under {token[:5]}")
+        print(f"Failed to type in {id} under {token[:5]}")
 
 def main():
     os.system("cls")
